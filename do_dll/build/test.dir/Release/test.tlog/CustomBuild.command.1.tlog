@@ -1,0 +1,10 @@
+^C:\USERS\MAO\DESKTOP\BJXN\TEST02\FEATURE_MATCHING\CPP\TEST02\DO_DLL\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/mao/Desktop/bjxn/test02/feature_matching/cpp/test02/do_dll -BC:/Users/mao/Desktop/bjxn/test02/feature_matching/cpp/test02/do_dll/build --check-stamp-file C:/Users/mao/Desktop/bjxn/test02/feature_matching/cpp/test02/do_dll/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
